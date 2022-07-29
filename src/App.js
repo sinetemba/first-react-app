@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import './App.css';
+import Title from './components/Title';
 
-function App() {
-  //1. hooks must always be called at the top level of the component 
-  //2. must be using within a scope of the react component
-  const [showEvents, setShowEvents] = useState(true) //boolean state
+function App() {  
+  const [showEvents, setShowEvents] = useState(true)
   const [events, setEvents] = useState([
     {title:"Steve doing this finally", id: 1},
     {title:"Upskilling is the goal", id: 2},
@@ -23,6 +22,7 @@ function App() {
 
   return(
     <div className='App'>
+       <Title/>
 
       {showEvents && (
       <div>
