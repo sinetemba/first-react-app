@@ -20,9 +20,11 @@ function App() {
     console.log(id)
   }
 
+  const subtitleConst = "All the latest events in Marioland"
+
   return(
     <div className='App'>
-       <Title/>
+       <Title title="Events in your area" subtitle={subtitleConst}/>
 
       {showEvents && (
       <div>
